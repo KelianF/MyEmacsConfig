@@ -1,6 +1,13 @@
 ;;; Init File
 
 * Global Settings
+
+** Show Columns and Lines on the Modeline
+#+begin_src emacs-lisp
+  (line-number-mode 1)
+  (column-number-mode 1)
+#+end_src
+
 ** Remove tool bar 
 #+begin_src emacs-lisp
 (tool-bar-mode -1)
@@ -27,6 +34,12 @@
 #+end_src
 
 
+** Clock
+#+begin_src emacs-lisp
+  (setq display-time-24hr-format t)
+  (display-time-mode 1)
+#+end_src
+
 ** Subword
 #+begin_src emacs-lisp
 (global-subword-mode 1)
@@ -42,6 +55,18 @@
   (global-set-key (kbd "C-c w w") 'kill-whole-word)
 #+end_src
 
+*** Copy Whole Line
+#+begin_src emacs-lisp
+  (defun copy-whole-line ()
+    (interactive)
+    (save-excursion
+      (kill-new
+       (buffer-substring
+	(point-at-bol)
+	(point-at-eol)))))
+  (global-set-key (kbd "C-c w l") 'copy-whole-line)
+  
+#+end_src
 
 *** Hungry delete
 #+begin_src emacs-lisp
@@ -76,6 +101,8 @@
 *** basic config
 #+begin_src emacs-lisp
   (setq org-src-window-setup 'current-window)
+  (add-to-list 'org-structure-template-alist
+	       '("el" . "src emacs-lisp\n"))
 #+end_src
 
 ** Ido Mode
@@ -111,11 +138,28 @@
 #+begin_src emacs-lisp
 (global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
 #+end_src
-
 ** Buffers
 #+begin_src emacs-lisp
   (global-set-key (kbd "C-x b") 'ibuffer)
 #+end_src
+
+*** Kill all buffers
+#+begin_src emacs-lisp
+  (defun kill-all-buffers ()
+    (interactive)
+    (mapc 'kill-buffer (buffer-list)))
+  (global-set-key (kbd "C-M-s-k") 'kill-all-buffers)
+
+#+end_src
+
+*** Always kill current buffer
+#+begin_src emacs-lisp
+  (defun kill-curr-buffer ()
+    (interactive)
+    (kill-buffer (current-buffer)))
+  (global-set-key (kbd "C-x k") 'kill-curr-buffer)
+#+end_src
+
 
 ** Avy
 #+begin_src emacs-lisp
@@ -179,6 +223,10 @@
     
 #+end_src
 
+
+
+
+
 * Package settings
 ** Which-key 
 # Shows available auto-complete
@@ -191,11 +239,42 @@
 
 
 
+** Rainbow parenthesis 
+#+begin_src emacs-lisp
+  (use-package rainbow-delimiters
+    :ensure t
+    :init
+    (rainbow-delimiters-mode 1))
+#+end_src
+
+
+** Auto completion
+#+begin_src emacs-lisp
+  (use-package company
+    :ensure t
+    :init
+    (add-hook 'after-init-hook 'global-company-mode))
+#+end_src
+
+
 * Echo area setting
 ** Only Y or N for confiramation
 #+begin_src emacs-lisp
   (defalias 'yes-or-no-p 'y-or-n-p)
 #+end_src
+
+
+
+
+
+
+
+
+
+
+
+<e
+
 
 
 
