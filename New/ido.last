@@ -1,0 +1,74 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/kelia/Documents/StuffToKnow/" . "Proba/")
+ ("c:/Users/kelia/Documents/blog/" . "posts/")
+ ("c:/Users/kelia/Documents/" . "StuffToKnow/")
+ ("c:/Users/kelia/AppData/Roaming/" . ".emacs.d/")
+ ("c:/Users/kelia/AppData/" . "Roaming/")
+ ("c:/Users/kelia/" . "Documents/")
+ ("c:/Users/" . "kelia/")
+ ("c:/" . "Users/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/kelia/Documents/StuffToKnow/Proba/"
+ "c:/Users/kelia/Documents/blog/posts/"
+ "c:/Users/kelia/AppData/Roaming/.emacs.d/"
+ "c:/Users/kelia/Documents/"
+ "c:/Users/kelia/Documents/blog/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".#5_Independence.org"
+ "4_ConditionalProbability.org"
+ "5_Independence.org"
+ "computer-simulation-a-foundational-approach.org"
+ "config.org"
+ "init.el"
+ "2_Probability.org"
+ "the-hunger-artist.rst"
+ "template-orgmode.org"
+ "2_Combinatorics.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/kelia/Documents/StuffToKnow/Proba/" (24925 18122 0 0) "4_ConditionalProbability.tex" "4_ConditionalProbability.pdf" "4_ConditionalProbability.org~" "4_ConditionalProbability.org" "3_Probability.org" "2_Combinatorics.org~" "2_Combinatorics.org" "1_Counting.org~" "1_Counting.org" ".#5_Independence.org" "#2_Probability.org#" "../" "./")
+
+ ("c:/Users/kelia/Documents/blog/" (24905 43324 0 0) "__pycache__/" "_config.yml" "posts/" "plugins/" "pages/" "output/" "listings/" "index.md" "images/" "galleries/" "files/" "dev/" "conf.py" "cache/" ".gitignore" ".git/" ".doit.db.dir" ".doit.db.dat" ".doit.db.bak" "../" "./")
+
+ ("c:/Users/kelia/Documents/blog/posts/" (24905 43244 0 0) "tratchenberg.org~" "tratchenberg.org" "the-hunger-artist.rst~" "the-hunger-artist.rst" "test.org~" "test.org" "template-orgmode.org~" "template-orgmode.org" "imgOrgModeTemplate.png" "computer-simulation-a-foundational-approach.org~" "computer-simulation-a-foundational-approach.org" "../" "./")
+
+ ("c:/Users/kelia/Documents/Books/" (24872 31304 0 0) "Simulations/" "README.md" "Julia_Intro/" "ISLR/" "ClassicComputerScienceProblems/" ".ipynb_checkpoints/" ".git/" "../" "./")
+
+ ("c:/Users/kelia/AppData/Roaming/.emacs.d/" (24855 37142 0 0) "smex-items" "init.el~" "init.el" "ido.last~" "ido.last" "eshell/" "elpa/" "config.org~" "config.org" "config.el" "auto-save-list/" "../" "./")
+
+ ("c:/Users/kelia/" (24872 31335 0 0) "Videos/" "Untitled.ipynb" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "round2.csv" "round1.csv" "Recent/" "PrintHood/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{e1290b1d-19f8-11eb-8358-006f000806a1}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{e1290b1d-19f8-11eb-8358-006f000806a1}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{e1290b1d-19f8-11eb-8358-006f000806a1}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "miktex-console.lock" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Finalround.csv" "Favorites/" "Downloads/" "Documents/" "Desktop/" "debug.log" "Cookies/" "Contacts/" "Application Data/" "AppData/" "anaconda3/" "3D Objects/" ".ssh/" ".spyder-py3/" ".python_history" ".matplotlib/" ".jupyter/" ".julia/" ".ipython/" ".ipynb_checkpoints/" ".gitconfig" ".git-credentials" ".condarc" ".conda/" "../" "./")
+
+ ("c:/Program Files/" (24763 23964 0 0) "WindowsPowerShell/" "WindowsApps/" "Windows Sidebar/" "Windows Security/" "Windows Portable Devices/" "Windows Photo Viewer/" "Windows NT/" "Windows Multimedia Platform/" "Windows Media Player/" "Windows Mail/" "Windows Defender/" "Uninstall Information/" "Samsung/" "ModifiableWindowsApps/" "Microsoft Update Health Tools/" "Microsoft Office 15/" "Microsoft Office/" "McAfee/" "Lenovo/" "Internet Explorer/" "Intel/" "Google/" "desktop.ini" "Common Files/" "../" "./")
+
+ ("c:/Users/Public/" (24753 43656 0 0) "Videos/" "Pictures/" "NTUSER.DAT{db2b5fd5-b06c-11eb-8368-d7b788aba45f}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{db2b5fd5-b06c-11eb-8368-d7b788aba45f}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{db2b5fd5-b06c-11eb-8368-d7b788aba45f}.TM.blf" "NTUSER.DAT.LOG2" "NTUSER.DAT.LOG1" "NTUSER.DAT" "Music/" "Libraries/" "Downloads/" "Documents/" "desktop.ini" "Desktop/" "AccountPictures/" "../" "./")
+
+ ("c:/Users/kelia/AppData/Roaming/" (24693 26210 0 0) "Splashtop Wired XDisplay Agent/" "RStudio/" "NuGet/" "MiKTeX/" "Microsoft/" "jupyter/" "ghc/" "cabal/" "Adobe/" ".emacs.d/" ".anaconda/" "../" "./")
+
+ ("c:/Users/Default/" (24475 50940 0 0) "Videos/" "Templates/" "Start Menu/" "SendTo/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "NTUSER.DAT{e1290b1d-19f8-11eb-8358-006f000806a1}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{e1290b1d-19f8-11eb-8358-006f000806a1}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{e1290b1d-19f8-11eb-8358-006f000806a1}.TM.blf" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf" "NTUSER.DAT.LOG2" "NTUSER.DAT.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Application Data/" "AppData/" "../" "./")
+
+ ("c:/Users/kelia/Documents/StuffToKnow/" (24763 29091 0 0) "Proba/" "../" "./")
+
+ ("c:/Users/kelia/Documents/" (24763 29077 0 0) "WindowsPowerShell/" "test.tex~" "test.tex" "test.pdf" "test.org~" "test.org" "StuffToKnow/" "Python Scripts/" "My Videos/" "My Pictures/" "My Music/" "MediaLog/" "Julia_Intro_18.S191/" "desktop.ini" "Classic Computer Science Problems/" "Books/" "blog/" ".Rhistory" ".ipynb_checkpoints/" "../" "./")
+
+ ("c:/Program Files (x86)/" (24763 23964 0 0) "WindowsPowerShell/" "Windows Sidebar/" "Windows Portable Devices/" "Windows Photo Viewer/" "Windows NT/" "Windows Multimedia Platform/" "Windows Media Player/" "Windows Mail/" "Windows Defender/" "Microsoft.NET/" "Microsoft/" "Lenovo/" "Koino/" "Internet Explorer/" "Google/" "Emacs/" "desktop.ini" "Common Files/" "../" "./")
+
+ ("c:/Users/kelia/AppData/" (24539 7619 0 0) "Roaming/" "LocalLow/" "Local/" "../" "./")
+
+ ("c:/Users/" (24602 29520 0 0) "Public/" "kelia/" "desktop.ini" "defaultuser100000/" "Default User/" "Default/" "All Users/" "../" "./")
+
+ ("c:/Program Files (x86)/Emacs/" (24540 20135 0 0) "Uninstall.exe" "i686/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
