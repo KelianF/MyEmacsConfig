@@ -103,6 +103,30 @@
   (setq org-src-window-setup 'current-window)
   (add-to-list 'org-structure-template-alist
 	       '("el" . "src emacs-lisp\n"))
+
+#+end_src
+*** WordWrap
+#+begin_src emacs-lisp
+(visual-line-mode t)
+(global-visual-line-mode t)
+(setq-default word-wrap t)
+#+end_src
+
+
+
+
+** Python OrgMode
+
+#+begin_src emacs-lisp
+
+  (org-babel-do-load-languages
+
+   'org-babel-load-languages
+
+   '((python . t)))
+
+(add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images)
+
 #+end_src
 
 ** Ido Mode
@@ -237,17 +261,7 @@
   (which-key-mode))
 #+end_src
 
-** Haskell Setup
-#+begin_src emacs-lisp
-(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-;; hslint on the command line only likes this indentation mode;
-;; alternatives commented out below.
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
-;; Ignore compiled Haskell files in filename completions
-(add-to-list 'completion-ignored-extensions ".hi")
-#+end_src
+
 
 ** Rainbow parenthesis 
 #+begin_src emacs-lisp
@@ -267,28 +281,12 @@
 #+end_src
 
 
+
+
 * Echo area setting
 ** Only Y or N for confiramation
 #+begin_src emacs-lisp
   (defalias 'yes-or-no-p 'y-or-n-p)
 #+end_src
-
-
-
-
-
-
-
-
-
-
-
-<e
-
-
-
-
-
-
 
 
